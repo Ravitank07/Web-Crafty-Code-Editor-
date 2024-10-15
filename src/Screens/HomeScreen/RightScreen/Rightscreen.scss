@@ -1,0 +1,86 @@
+.right-container {
+    padding: 20px;
+    height: 100vh;
+    overflow-y:scroll ;
+  
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+
+        .add-folder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 30px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .folder-container {
+        .folder-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            padding: 20px 0;
+            .folder-header-item{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                .material-icons{
+                    cursor: pointer;
+                }
+                button{
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    background-color: white;
+                }
+            }
+        }
+        .cards-container{
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            .cards{
+                display: flex;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px gray;
+                width: 43%;
+                gap: 10px;
+                cursor: pointer;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px;
+                transition-duration: 0.5s;
+                .title-container{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .material-icons{
+                    cursor: pointer;
+                }
+                img{
+                    width: 50px;
+                }
+            }
+            .cards:hover{
+                box-shadow: 5px 5px 10px gray;
+                outline: 2px solid white;
+            }
+        }
+    }
+}

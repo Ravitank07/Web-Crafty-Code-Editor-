@@ -1,0 +1,57 @@
+.playGround-container{
+    height: 100vh;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    .content-container{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 10px;
+        background-color:#ededed;
+        padding: 5px;
+    }
+    .logo{
+        height:50px;
+    }
+    h1{
+        color: white;
+        
+    }
+    .header-container{
+        display: flex;
+        justify-content: center;
+        background-color: #1e1e1e;
+        padding: 5px 0;
+    }
+    .input-output-container{
+        background-color: dodgerblue;
+        display: flex;
+        flex-direction: column;
+        .icon-container{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+        }
+        .input-header{
+            background-color: #ededed;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        textarea{
+            padding: 10px;
+            flex-grow: 1;
+            border: none;
+            resize: none;
+            font-size: 15px;
+            }
+        textarea:focus{
+            outline: none;
+        }
+    }
+    .editor-container{
+        grid-row: 1 / 3;
+    }
+}
